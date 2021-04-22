@@ -30,6 +30,8 @@ Please use the Github 'Issues' feature to ask questions regarding this repositor
 
 Best efforts will be made to answer all questions but please allow a few days for a response.
 
+If a general forum style chat is more appropriate, please use the Github 'Discussions' feature.
+
 
 
 ## Content
@@ -213,3 +215,10 @@ CAD data file format should be either native Fusion 360 ('.f3d') or STEP ('.stp'
 Supplementary information should be provided as either a PDF or Markdown file.
 
 
+----
+Don't forget to check the IMechE website regularly for documentation updates:
+
+https://www.imeche.org/events/formula-student/team-information/forms-and-documents
+
+## For specific questions and bug reports, please raise an Issue and tag it with the 'question' label.
+#### Otherwise, please use the Github Discussions feature for general forum-style chat.
