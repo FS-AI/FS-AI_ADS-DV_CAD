@@ -22,6 +22,10 @@ If you are not accessing this repository directly from this URL then likely you 
 
 The repository will be updated regularly in response to questions and as new information is confirmed and released. Github allows you to 'Watch' the repository so as to be informed of activity.
 
+#### Update 2021-06-02
+
+CAD models of the various connector types have been added.
+
 
 
 ## Questions
@@ -42,6 +46,10 @@ The repository consists of the following files:
 - '\images' - folder containing the images for 'Readme.md'.
 - 'FS-AI_ADS-DV_CAD.f3d' - see below.
 - 'FS-AI_ADS-DV_CAD.step' - see below.
+- '12V_Power_Mated' .f3d & .step' (added 2021-06-02)
+- 'CAN_DE9_Mated'  .f3d & .step' (added 2021-06-02)
+- 'RJ45_Ethernet'  .f3d & .step' (added 2021-06-02)
+- 'USB_Mated'  .f3d & .step' (added 2021-06-02)
 
 
 
@@ -192,6 +200,10 @@ Mating part number TE DT04-2P.
 - 1x DE9 connector for CAN on the vehicle. It will be receptacle type, pin contacts and internal thread:
 
 ![DE9_Receptacle_Pin](images/DE9_Receptacle_Pin.png)
+
+
+
+*<u>CAD models of the above connectors have been added on 2021-06-02.</u>*
 
 
 
