@@ -6,9 +6,9 @@
 
 This repository contains CAD data for the IMechE FS-AI ADS-DV for release to participating teams.
 
-The CAD provided is a subset of the whole vehicle CAD and is intended for sensor installation and vehicle dynamics modelling purposes.
+The CAD provided is a subset of the whole vehicle CAD and is intended for sensor and / or compute hardware installation and vehicle dynamics modelling purposes.
 
-In particular teams wishing to fit additional sensors to a shared IMechE ADS-DV must use this CAD data to gain approval for their installation design. (See section 'Additional Sensor Mounting CAD Submission and Approval' below).
+In particular teams wishing to fit additional sensors and / or compute hardware to a shared IMechE ADS-DV must use this CAD data to gain approval for their installation design. (See section 'Additional Sensor and Compute Mounting CAD Submission and Approval' below).
 
 This CAD data remains Copyright IMechE 2020 and must not be uploaded to alternate public access web / cloud locations. This is both to protect copyright and to ensure there is one 'official' source for CAD data that may be up-issued by the IMechE as necessary. Local clones are encouraged to make it easy for updates to be pulled from the upstream repository using Git.
 
@@ -21,6 +21,10 @@ If you are not accessing this repository directly from this URL then likely you 
 ## Updates
 
 The repository will be updated regularly in response to questions and as new information is confirmed and released. Github allows you to 'Watch' the repository so as to be informed of activity.
+
+#### Update 2023-02-23
+
+Clarified that both additional sensor and compute installations are allowed.
 
 #### Update 2021-06-02
 
@@ -79,11 +83,11 @@ This STEP file has been tested with FreeCAD v0.19, available here: https://www.f
 
 ### Side View
 
-In the case of using the STEP file, see below for the details of the sight line of the ZED camera and the Rule T 1.1.16 Surface Envelope in side view.
+In the case of using the STEP file, see below for the details of the sight line of the ZED camera and the FS-AI Rule T 1.3.3 Surface Envelope in side view.
 
 The ZED camera reference angle is 15deg below horizontal. A normal line projected from the centre of the front face of the ZED camera will intersect the ground plane approximately 2750mm from the camera position.
 
-Formula Student Rule T 1.1.16 defines a 'Surface Envelope' in side view from the top of the roll hoop to the outer profile of the tyres. Rule DV 4.1.3 further requires that all sensors be located within this surface envelope. Since the ADS-DV does not have a traditional roll hoop, the envelope is defined from the outer profile of the TSAL dome instead. The tyre profile is projected as a 515mm diameter circle on the vehicle centreline.
+FS-AI Rule T 1.3.3 defines a 'Surface Envelope' in side view from the top of the ADS-DV TSAL to the outer profile of the tyres. Rule T 1.3.3 further requires that all sensors and / or compute hardware be located within this surface envelope. Since the ADS-DV does not have a traditional roll hoop, the envelope is defined from the outer profile of the TSAL dome. The tyre profile is projected as a 515mm diameter circle on the vehicle centreline.
 
 ![FS-AI ADS-DV Side View Sketch](images/FS-AI_ADS-DV_Side_View_Sketch.png)
 
@@ -91,9 +95,9 @@ Formula Student Rule T 1.1.16 defines a 'Surface Envelope' in side view from the
 
 ### Front View
 
-In the case of using the STEP file, see below for the details of the Rule T 1.1.16 Surface Envelope in front view.
+In the case of using the STEP file, see below for the details of the Rule T 1.3.3 Surface Envelope in front view.
 
-Formula Student Rule T 1.1.16 defines a 'Surface Envelope' in front view from the top of the roll hoop to the outer profile of the tyres. Rule DV 4.1.3 further requires that all sensors be located within this surface envelope. Since the ADS-DV does not have a traditional roll hoop, the envelope is defined from the outer profile of the TSAL dome instead. The tallest point on the tyre profile is used.
+FS-AI Rule T 1.3.3 defines a 'Surface Envelope' in front view from the top of the ADS-DV TSAL to the outer profile of the tyres. Rule T 1.3.3 further requires that all sensors and / or compute hardware be located within this surface envelope. Since the ADS-DV does not have a traditional roll hoop, the envelope is defined from the outer profile of the TSAL dome instead. The tallest point on the tyre profile is used.
 
 ![FS-AI ADS-DV Front View Sketch](images/FS-AI_ADS-DV_Front_View_Sketch.png)
 
@@ -103,25 +107,27 @@ Formula Student Rule T 1.1.16 defines a 'Surface Envelope' in front view from th
 
 In the case of using the STEP file the Analysis - Section2 view is not available and is reproduced in the screenshot below.
 
-The nominal reference design for an Additional Sensor Mounting is a plate spaced 100mm up from the internal chassis using 26mm (or 1.0") diameter spacer pillars. A 120mm M6 bolt is required to ensure sufficient thread engagement into the M6 nut plates of the chassis. A metal spring lock washer and plain metal backing washer are required to ensure the integrity of the mounting.
+The nominal reference design for an Additional Sensor and Compute Mounting is a plate spaced 100mm up from the internal chassis using 26mm (or 1.0") diameter spacer pillars. A 120mm M6 bolt is required to ensure sufficient thread engagement into the M6 nut plates of the chassis. A metal spring lock washer and plain metal backing washer are required to ensure the integrity of the mounting.
 
-The full Additional Sensor Mounting requirements are discussed below.
+The full Additional Sensor and Compute Mounting requirements are discussed below.
 
 ![FS-AI ADS-DV Section View Sketch](images/FS-AI_ADS-DV_Section_View_Sketch.png)
 
 
 
-## Additional Sensor Mounting
+## Additional Sensor and Compute Mounting
 
-Teams wishing to mount additional sensors to the ADS-DV must adhere to the following requirements:
+Teams wishing to mount additional sensors and / or compute hardware to the ADS-DV must adhere to the following requirements:
 
-### Surface Envelope (Rules T 1.1.16 & DV 4.1.3)
+### Surface Envelope (FS-AI Rules T 1.3.3)
 
-Additional Sensors and all mounting hardware **must** fit within both the Side View and Front View Surface Envelopes defined above.
+Additional Sensors, Compute hardware and all mounting hardware **must** fit within both the Side View and Front View Surface Envelopes defined above.
+
+**NOTE:** FS-AI Rule T 1.3.4 prohibits teams using a **shared** IMechE ADS-DV from using the 700mm x 500mm forward sensor zone.
 
 ### Mounting Requirements
 
-The nominal reference design for an Additional Sensor Mounting is a plate spaced 100mm up from the internal chassis using 26mm (or 1.0") diameter spacer pillars. This is provided as an example in the CAD data. The example uses all 5 available mounting locations.
+The nominal reference design for an Additional Sensor and Compute Mounting is a plate spaced 100mm up from the internal chassis using 26mm (or 1.0") diameter spacer pillars. This is provided as an example in the CAD data. The example uses all 5 available mounting locations.
 
 Alternate designs are permissible and will be evaluated as part of the approval process.
 
@@ -137,7 +143,7 @@ To safely and securely mount additional sensors the following requirements must 
 
 #### Note on AV mounts:
 
-Grommet type AV mounts may be used to isolate an additional sensor mounting plate as long as the rigid clamping requirement is respected. It must be possible to fully compress the M6 metal spring washer. This is best achieved using 'top hat' spacers or a rigid spacer tube:
+Grommet type AV mounts may be used to isolate an additional sensor and compute hardware mounting plate as long as the rigid clamping requirement is respected. It must be possible to fully compress the M6 metal spring washer. This is best achieved using 'top hat' spacers or a rigid spacer tube:
 
 ![AV_Sensor_Mount_Example](images/AV_Sensor_Mount_Example.png)
 
@@ -165,7 +171,7 @@ The electrical connector location for additional sensors is somewhat flexible an
 
 
 
-The wiring harness on the vehicle side will allow for a range of movement within this approximate zone. Connecting and disconnecting will be done by moving the vehicle side wiring harness. However additional sensor mounting designs **must allow for strain relief of both sides of the connected wiring**. The strain relief on the vehicle side of the connector(s) should be adjustable for cable diameter and easily removeable. A screwed down cable tie base is the recommended option:
+The wiring harness on the vehicle side will allow for a range of movement within this approximate zone. Connecting and disconnecting will be done by moving the vehicle side wiring harness. However additional sensor and compute hardware mounting designs **must allow for strain relief of both sides of the connected wiring**. The strain relief on the vehicle side of the connector(s) should be adjustable for cable diameter and easily removeable. A screwed down cable tie base is the recommended option:
 
 ![Cable_Tie_Base](images/Cable_Tie_Base.png)
 
@@ -207,16 +213,16 @@ Mating part number TE DT04-2P.
 
 
 
-## Additional Sensor Mounting CAD Submission for Approval
+## Additional Sensor and Compute Mounting CAD Submission for Approval
 
-Teams wishing to fit additional sensors to a shared IMechE ADS_DV **must submit CAD data** of their proposed design for approval. Teams should have requested additional sensors on their 'DCS' form with full details provided for review in their 'ASF' document. Team leaders should already have been contacted by email with details of this process and contact details for submission. A 'zip' archive should be used to contain all data, labelled with team identification and a version number.
+Teams wishing to fit additional sensors and / or compute hardware to a shared IMechE ADS_DV **must submit CAD data** of their proposed design for approval. Teams should have requested additional sensors and / or compute hardware on their 'DCS' form with full details provided for review in their 'ASF' document. Team leaders should already have been contacted by email with details of this process and contact details for submission. A 'zip' archive should be used to contain all data, labelled with team identification and a version number.
 
-The CAD data should place the sensor mounting design in the correct position **within the CAD data provided in this repository** and include the following components / information:
+The CAD data should place the sensor and / or compute hardware mounting design in the correct position **within the CAD data provided in this repository** and include the following components / information:
 
-- All additional sensor hardware (space-claim / box models are fine, internal detail is not required).
+- All additional sensor and compute hardware (space-claim / box models are fine, internal detail is not required).
 - Sensor mounting structural components **including spacer tubes.**
 - M6 fasteners including all washers.
-- All fasteners used to mount sensor hardware, or a description of the mounting technique used (e.g. 3M Dual Lock).
+- All fasteners used to mount sensor and compute hardware, or a description of the mounting technique used (e.g. 3M Dual Lock).
 - Information on component materials and manufacturing process.
 - Information and / or models regarding the proposed wiring scheme, connector location(s) and the **cable strain relief implementation**.
 
