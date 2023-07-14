@@ -183,7 +183,7 @@ The vehicle side connectors are described below. All images are **vehicle side c
 
 #### Power
 
-- 1x TE DT06-2S power connector supplying automotive ‘12V’ (11.5 ->14.5V depending on battery charge state) up to 5A:
+- 1x TE DT06-2S power connector supplying automotive ‘12V’ (11.5 ->14.5V depending on battery charge state) up to 5A. Pin 1 = 12V and Pin 2 = Gnd:
 
 ![TE_DT04-2P](images/TE_DT04-2P.png)
 
