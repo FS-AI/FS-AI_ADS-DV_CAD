@@ -30,6 +30,9 @@ Clarified that both additional sensor and compute installations are allowed.
 
 CAD models of the various connector types have been added.
 
+#### Update 2026-01-26
+
+The 'f3d' and 'step' files have been updated to the ADS-DV 2026 specification with **provided Sensor Mount Posts, M6 Threaded Rods and 'Quick-Release' Clamping Knobs.**
 
 
 ## Questions
@@ -48,16 +51,15 @@ The repository consists of the following files:
 
 - 'Readme.md' - this file containing information about the repository.
 - '\images' - folder containing the images for 'Readme.md'.
-- 'FS-AI_ADS-DV_CAD.f3d' - see below.
-- 'FS-AI_ADS-DV_CAD.step' - see below.
+- 'FS-AI_ADS-DV_CAD_2026.f3d' - see below.
+- 'FS-AI_ADS-DV_CAD_2026.step' - see below.
 - '12V_Power_Mated' .f3d & .step' (added 2021-06-02)
-- 'CAN_DE9_Mated'  .f3d & .step' (added 2021-06-02)
 - 'RJ45_Ethernet'  .f3d & .step' (added 2021-06-02)
 - 'USB_Mated'  .f3d & .step' (added 2021-06-02)
 
 
 
-### Fusion 360 File 'FS-AI_ADS-DV_CAD.f3d'
+### Fusion 360 File 'FS-AI_ADS-DV_CAD_2026.f3d'
 
 This file is provided in native Fusion 360 format, which means it preserves sketch details, section analysis details and other useful data such as construction geometry.
 
@@ -67,19 +69,20 @@ See also this video for information on how to correctly activate the Personal ed
 
 
 
-### STEP File 'FS-AI_ADS-DV_CAD.step'
+### STEP File 'FS-AI_ADS-DV_CAD_2026.step'
 
 This file is a STEP format export of the Fusion 360 file. STEP is a universal file format for import into other CAD packages.
 
 One disadvantage of the STEP format is that it does not preserve the sketch details of the Front and Side view relating to the Surface Envelope definition and the ZED camera sight line. You will need to replicate this sketch geometry within your own CAD package. See the images below.
 
-This STEP file has been tested with FreeCAD v0.19, available here: https://www.freecadweb.org/
+This STEP file has been tested with FreeCAD v1.0.2, available here: https://www.freecad.org/
 
-![FS-AI_ADS-DV_FreeCAD_0.19](images/FS-AI_ADS-DV_FreeCAD_0.19.png)
+**STEP as rendered in FreeCAD v1.0.2, without Front & Side View Sketches:**
+![FS-AI_ADS-DV_FreeCAD_v1.0.2](images/FS-AI_ADS-DV_FreeCAD_v1.0.2.png)
 
 
 
-## Sketch Views
+## Front and Side Sketch Views
 
 ### Side View
 
@@ -89,7 +92,7 @@ The ZED camera reference angle is 15deg below horizontal. A normal line projecte
 
 FS-AI Rule T 1.3.3 defines a 'Surface Envelope' in side view from the top of the ADS-DV TSAL to the outer profile of the tyres. Rule T 1.3.3 further requires that all sensors and / or compute hardware be located within this surface envelope. Since the ADS-DV does not have a traditional roll hoop, the envelope is defined from the outer profile of the TSAL dome. The tyre profile is projected as a 515mm diameter circle on the vehicle centreline.
 
-![FS-AI ADS-DV Side View Sketch](images/FS-AI_ADS-DV_Side_View_Sketch.png)
+![FS-AI ADS-DV Side View Sketch](images/FS-AI_ADS-DV_Side_View_Sketch_2026.png)
 
 
 
@@ -99,20 +102,7 @@ In the case of using the STEP file, see below for the details of the Rule T 1.3.
 
 FS-AI Rule T 1.3.3 defines a 'Surface Envelope' in front view from the top of the ADS-DV TSAL to the outer profile of the tyres. Rule T 1.3.3 further requires that all sensors and / or compute hardware be located within this surface envelope. Since the ADS-DV does not have a traditional roll hoop, the envelope is defined from the outer profile of the TSAL dome instead. The tallest point on the tyre profile is used.
 
-![FS-AI ADS-DV Front View Sketch](images/FS-AI_ADS-DV_Front_View_Sketch.png)
-
-
-
-### Section View
-
-In the case of using the STEP file the Analysis - Section2 view is not available and is reproduced in the screenshot below.
-
-The nominal reference design for an Additional Sensor and Compute Mounting is a plate spaced 100mm up from the internal chassis using 26mm (or 1.0") diameter spacer pillars. A 120mm M6 bolt is required to ensure sufficient thread engagement into the M6 nut plates of the chassis. A metal spring lock washer and plain metal backing washer are required to ensure the integrity of the mounting.
-
-The full Additional Sensor and Compute Mounting requirements are discussed below.
-
-![FS-AI ADS-DV Section View Sketch](images/FS-AI_ADS-DV_Section_View_Sketch.png)
-
+![FS-AI ADS-DV Front View Sketch](images/FS-AI_ADS-DV_Front_View_Sketch_2026.png)
 
 
 ## Additional Sensor and Compute Mounting
@@ -125,50 +115,30 @@ Additional Sensors, Compute hardware and all mounting hardware **must** fit with
 
 **NOTE:** FS-AI Rule T 1.3.4 prohibits teams using a **shared** IMechE ADS-DV from using the 700mm x 500mm forward sensor zone.
 
-### Mounting Requirements
+### Mounting Requirements (Updated for 2026)
 
-The nominal reference design for an Additional Sensor and Compute Mounting is a plate spaced 100mm up from the internal chassis using 26mm (or 1.0") diameter spacer pillars. This is provided as an example in the CAD data. The example uses all 5 available mounting locations.
+The nominal reference design for an Additional Sensor and Compute Mounting is a Sensor Plate placed 100mm up from the internal chassis on the provided Spacer Posts.
 
-Alternate designs are permissible and will be evaluated as part of the approval process.
+M6 threaded rods are now provided, similar to the Reference Compute Installation at the rear of the vehicle. These M6 threads accept a 'Quick Release' Clamping Knob, RS Part number 188-3461.
+
+An example plate is provided in the CAD data. The example uses all 4 available mounting locations, **the centre location has been removed for 2026**.
 
 To safely and securely mount additional sensors the following requirements must be respected:
 
-- **At least 3** mounting pillar locations **must be used**, out of the 5 available.
-- The **only permissible mounting option** is a full-length M6 bolt clamping the mounting structure down onto the vehicle chassis plate. Concepts with more than one thread risk the 'wrong' thread releasing when the additional sensors are removed.
-- All clamping surfaces must be parallel to the vehicle chassis plate.
-- Metal spring lock washers must be used, backed up with metal plain washers, to ensure sufficient clamping force and integrity of mounting.
-- All components must be rigid enough to allow the metal spring lock washers to compress completely when the M6 bolts are tightened.
-- 12mm of M6 thread engagement is required below the top face of the vehicle chassis plate.
-- Unimpeded vertical access to the M6 bolt heads must be available to allow access for a socket (16mm OD) or hex driver.
-
-#### Note on AV mounts:
-
-Grommet type AV mounts may be used to isolate an additional sensor and compute hardware mounting plate as long as the rigid clamping requirement is respected. It must be possible to fully compress the M6 metal spring washer. This is best achieved using 'top hat' spacers or a rigid spacer tube:
-
-![AV_Sensor_Mount_Example](images/AV_Sensor_Mount_Example.png)
-
-### Mounting Locations
-
-The pattern of the position of the mounting locations is as follows:
-
-![FS-AI_ADS-DV_Sensor_Mount_Pattern](images/FS-AI_ADS-DV_Sensor_Mount_Pattern.png)
-
-The mounting holes are M6 threaded, and the 30mm diameter represents the clearance holes in the bodywork.
-
-
-
-#### ToDo:
-
-Example 3D printed mounting plate, showing parallel clamping surfaces, metal spring lock washers and metal plain backing washers.
-
+- **At least 3** mounting pillar locations **must be used**, out of the 4 available.
+- M6 Clearance holes are needed in the Sensor Plate. 6.5mm diameter holes are recommended.
+- Clearance is needed for the 40mm diameter 'Quick Release' Clamping Knobs.
+- Maximum 5mm Sensor Plate thickness.
 
 
 ## Additional Sensor Electrical Connections
 
-The electrical connector location for additional sensors is somewhat flexible and will be confirmed once all teams have submitted an initial design for approval. The preferred location is in the region circled on the image below:
+The electrical connector location for additional sensors is somewhat flexible. The approximate location is in the region circled on the image below:
 
-![FS-AI_ADS-DV_Additional_Sensor_Connector_Location](images/FS-AI_ADS-DV_Additional_Sensor_Connector_Location.png)
+![FS-AI_ADS-DV_Additional_Sensor_Connector_Location](images/FS-AI_ADS-DV_Additional_Sensor_Connector_Location_2026.png)
 
+
+![Front_Connections](images/Front_Connections.png)
 
 
 The wiring harness on the vehicle side will allow for a range of movement within this approximate zone. Connecting and disconnecting will be done by moving the vehicle side wiring harness. However additional sensor and compute hardware mounting designs **must allow for strain relief of both sides of the connected wiring**. The strain relief on the vehicle side of the connector(s) should be adjustable for cable diameter and easily removeable. A screwed down cable tie base is the recommended option:
@@ -191,42 +161,37 @@ Mating part number TE DT04-2P.
 
 #### Ethernet
 
-- 2x Ethernet Cat6 cables with the standard RJ45 connector running from 2 Ethernet sockets on the InCarPC:
+- 1x Ethernet Cat5e cables with the standard RJ45 connector running to the rear of the vehicle for use by the InCarPC or a Team compute platform:
 
 ![Ethernet_RJ45](images/Ethernet_RJ45.png)
 
 #### USB3.0
 
-- 2x USB3.0 Type A sockets connected via a powered USB3.0 hub to the InCarPC:
+- 2x USB3.0 Type A sockets running to the rear of the vehicle for use by the InCarPC or a Team compute platform:
 
 ![USB3.0_A](images/USB3.0_A.png)
 
-#### CAN
+#### Compute Platform Power & CAN
 
-- 1x DE9 connector for CAN on the vehicle. It will be receptacle type, pin contacts and internal thread:
+- 1x D-Sub connector for Power & CAN on the vehicle.
 
-![DE9_Receptacle_Pin](images/DE9_Receptacle_Pin.png)
+![Power_&_CAN](images/Power_&_CAN_Socket.png)
 
-
-
-*<u>CAD models of the above connectors have been added on 2021-06-02.</u>*
+**For full Mating Part Number and Pinout details see the info from the 'FS-AI/FS-AI_Compute' GitHub repository at [LINK](https://github.com/FS-AI/FS-AI_Compute/blob/master/ADS-DV_Reference_Compute_Installation.md)**
 
 
 
 ## Additional Sensor and Compute Mounting CAD Submission for Approval
 
-Teams wishing to fit additional sensors and / or compute hardware to a shared IMechE ADS_DV **must submit CAD data** of their proposed design for approval. Teams should have requested additional sensors and / or compute hardware on their 'DCS' form with full details provided for review in their 'ASF' document. Team leaders should already have been contacted by email with details of this process and contact details for submission. A 'zip' archive should be used to contain all data, labelled with team identification and a version number.
+Teams wishing to fit additional sensors and / or compute hardware to a shared IMechE ADS_DV **must submit CAD data** of their proposed design for approval. Teams should have requested additional sensors and / or compute hardware on their 'DCS' form with full details provided for review in their 'ASF' document. Team leaders will be contacted by email with details of this process and contact details for submission. A 'zip' archive should be used to contain all data, labelled with team identification and a version number.
 
 The CAD data should place the sensor and / or compute hardware mounting design in the correct position **within the CAD data provided in this repository** and include the following components / information:
 
 - All additional sensor and compute hardware (space-claim / box models are fine, internal detail is not required).
-- Sensor mounting structural components **including spacer tubes.**
-- M6 fasteners including all washers.
+- Sensor mounting structural components **including the provided spacer tubes, M6 threaded rods and 'Quick Release' clamping knobs.**
 - All fasteners used to mount sensor and compute hardware, or a description of the mounting technique used (e.g. 3M Dual Lock).
 - Information on component materials and manufacturing process.
 - Information and / or models regarding the proposed wiring scheme, connector location(s) and the **cable strain relief implementation**.
-
-NOTE: it is the responsibility of the team to provide **all additional sensor mounting components**, nothing is provided with the vehicle except the M6 threaded holes in the vehicle chassis plate.
 
 CAD data file format should be either native Fusion 360 ('.f3d') or STEP ('.stp' / '.step').
 
